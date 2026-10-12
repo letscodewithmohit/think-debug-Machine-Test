@@ -1,0 +1,29 @@
+Requirements
+
+Custom Product Slider:
+Implement a custom image slider (without third-party libraries) to showcase featured products.
+Slider should have navigation controls (Next, Previous) and autoplay functionality.
+
+Fetch and display a list of products from a public API (e.g., https://fakestoreapi.com/products).
+Show product image, title, price, and an "Add to Cart" button.
+Cart Functionality:
+
+Clicking "Add to Cart" should add the product to a cart.
+Show the cart count in a header component.
+Clicking on the cart count should open a modal displaying cart items with a remove button.
+Wishlist Functionality:
+
+Each product should have a heart icon to add/remove it from the wishlist.
+Wishlist items should persist in local storage.
+Filters & Sorting:
+
+Styling:
+Use custom CSS or Tailwind CSS for styling
+
+Bonus Points:
+ Use React Context API for managing cart and wishlist.
+ Implement search functionality to find products by name.
+ Optimize API calls using caching or debouncing.
+
+Do not use pre-built themes 
+UI libraries like Material-UI, Ant Design, or Bootstrap. We will check your code for custom styling and structure.
