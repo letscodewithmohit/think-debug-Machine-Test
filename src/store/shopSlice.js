@@ -33,6 +33,9 @@ const shopSlice = createSlice({
         state.cart.push({ ...product, quantity: 1 });
       }
     },
+    removeFromCart(state, action) {
+      state.cart = state.cart.filter((item) => item.id !== action.payload);
+    },
     toggleWishlist(state, action) {
       const productId = action.payload;
       const isSaved = state.wishlist.includes(productId);
@@ -44,5 +47,5 @@ const shopSlice = createSlice({
   },
 });
 
-export const { addToCart, toggleWishlist } = shopSlice.actions;
+export const { addToCart, removeFromCart, toggleWishlist } = shopSlice.actions;
 export default shopSlice.reducer;

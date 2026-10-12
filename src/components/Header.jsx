@@ -2,6 +2,7 @@ import logo from "../../Image/logo.png";
 import Icon from "./Icon.jsx";
 
 function Header({
+  onOpenCart,
   onShowWishlist,
   onShowAll,
   query,
@@ -41,13 +42,17 @@ function Header({
           <span>Wishlist</span>
         </button>
 
-        <div className="nav-action cart-count" aria-label={`Cart, ${cartCount} items`}>
+        <button
+          className="nav-action cart-count"
+          onClick={onOpenCart}
+          aria-label={`Open cart, ${cartCount} items`}
+        >
           <span className="nav-icon-wrap">
             <Icon name="cart" size={20} />
             <span className="nav-badge">{cartCount}</span>
           </span>
           <span>Cart</span>
-        </div>
+        </button>
       </nav>
     </header>
   );

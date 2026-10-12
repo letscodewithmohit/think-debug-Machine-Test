@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import Header from "./components/Header.jsx";
 import HeroSlider from "./components/HeroSlider.jsx";
 import ProductSection from "./components/ProductSection.jsx";
+import CartModal from "./components/CartModal.jsx";
 import Newsletter from "./components/Newsletter.jsx";
 import Footer from "./components/Footer.jsx";
 
@@ -41,6 +42,7 @@ function App() {
   const [error, setError] = useState("");
   const [query, setQuery] = useState("");
   const [showWishlist, setShowWishlist] = useState(false);
+  const [cartOpen, setCartOpen] = useState(false);
 
   useEffect(() => {
     let isCurrent = true;
@@ -89,6 +91,7 @@ function App() {
       </div>
 
       <Header
+        onOpenCart={() => setCartOpen(true)}
         onShowWishlist={openWishlist}
         onShowAll={showAllProducts}
         query={query}
@@ -111,6 +114,7 @@ function App() {
       </main>
 
       <Footer />
+      {cartOpen && <CartModal onClose={() => setCartOpen(false)} />}
     </div>
   );
 }
