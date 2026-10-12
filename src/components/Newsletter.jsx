@@ -13,9 +13,8 @@ function Newsletter() {
   return (
     <section className="newsletter">
       <div className="newsletter-copy">
-        <p className="eyebrow">A little good in your inbox</p>
-        <h2>Stay in the know.</h2>
-        <p>Fresh finds, feel-good deals, and notes from our shop.</p>
+        <h1 className="eyebrow">Join Our Newsletter</h1>
+       
       </div>
 
       <form className="newsletter-form" onSubmit={handleSubmit}>

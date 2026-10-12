@@ -23,13 +23,13 @@ function ProductSection({
       <div className="section-heading">
         <div>
           <p className="eyebrow">
-            {showWishlist ? "Saved just for you" : "The good stuff"}
+           
           </p>
-          <h2>{showWishlist ? "Your wishlist" : "Special picks for you"}</h2>
+          <h2>{showWishlist ? "Your wishlist" : "Special products for you"}</h2>
           <p className="section-subtitle">
             {showWishlist
-              ? "Keep your favorite finds close."
-              : "Everyday essentials and little things worth loving."}
+              ? "Keep your favorite "
+              : "Everyday essentials "}
           </p>
         </div>
 
