@@ -303,7 +303,7 @@ select:focus-visible {
   background: rgba(255, 255, 255, 0.91);
   color: var(--ink);
   cursor: pointer;
-  opacity: 0;
+  opacity: 1;
   transform: translateY(-50%);
   transition: opacity 160ms ease, background 160ms ease;
 }
